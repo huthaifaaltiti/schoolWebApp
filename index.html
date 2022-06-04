@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Style Links -->
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>Stage2-Task1</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <div class="sub-container-left">
+          <div class="sub-container-left--top">
+            <h1 class="heading-1">classroom</h1>
+
+            <div class="sub-container-left--top-user">
+              <div class="sub-container-left--top-user--pic-container">
+                <img
+                  src="/images/user-profile-picture.png"
+                  alt="user image"
+                  class="user-img"
+                />
+              </div>
+
+              <div class="sub-container-left--top-user--name">
+                <span class="user-name">Huthaifa</span>
+                <span class="user-title">Grade 1</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-container-left--bot">
+            <ul class="sub-container-left--bot-list">
+              <li data-section="one" class="sub-container-left--bot-item">
+                <i class="fa-solid fa-graduation-cap icon"></i>
+                <span>My Profile</span>
+              </li>
+
+              <li data-section="two" class="sub-container-left--bot-item">
+                <i class="fa-solid fa-list-check icon"></i>
+                <span>Home Tasks</span>
+              </li>
+
+              <li data-section="three" class="sub-container-left--bot-item">
+                <i class="fa-solid fa-calendar-days icon"></i>
+                <span>Schedule</span>
+              </li>
+
+              <li data-section="four" class="sub-container-left--bot-item">
+                <i class="fa-solid fa-message icon"></i>
+                <span>Chat</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sub-container-right">
+          <!-- :Main Page -->
+          <div data-text="zero" class="user-container--zero">
+            <p class="para-text">
+              Hi <strong>Mr.Huthaifa</strong>, you can find here the main gate
+              for student services.
+            </p>
+          </div>
+
+          <!-- :For Profile -->
+          <div data-text="one" class="user-container user-container--profile">
+            <div class="user-container-top">
+              <div class="date-time-container">
+                <span class="date"> 8 feb </span>
+                <span class="time"> 08:55 </span>
+              </div>
+
+              <p class="day">Wednesday</p>
+
+              <div class="user-search">
+                <form class="user-search-form" action="#">
+                  <button class="user-search-btn" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                  <input
+                    class="user-search-input"
+                    type="text"
+                    placeholder="Search"
+                    name="search"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <div class="user-container-bot user-container-bot--profile">
+              <h2 class="heading-2">Profile Picture</h2>
+
+              <div class="user-profile-pic-container">
+                <div class="user-pic-container">
+                  <img
+                    src="/images/user-profile-picture.png"
+                    alt="user profile picture"
+                    class="user-pic"
+                  />
+                </div>
+
+                <div class="user-pic-btns-group">
+                  <button class="btn user-pic-btn">Change Picture</button>
+                  <button class="btn user-pic-btn">Remove Picture</button>
+                </div>
+              </div>
+
+              <form action="#" method="get" class="user-container-profile-form">
+                <div class="form-group">
+                  <div class="form-div-group">
+                    <label class="profile-form-label" for="name"
+                      >First Name
+                    </label>
+                    <input
+                      class="profile-form-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-div-group">
+                    <label class="profile-form-label" for="name"
+                      >Last Name
+                    </label>
+                    <input
+                      class="profile-form-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-div-group">
+                  <label
+                    class="profile-form-label profile-form-label--email"
+                    for="email"
+                    >Email
+                  </label>
+                  <input
+                    class="profile-form-input profile-form-input--email"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+
+                <div class="form-div-group">
+                  <label class="profile-form-label" for="city"> City </label>
+                  <input
+                    class="profile-form-input"
+                    type="email"
+                    name="email"
+                    id="city"
+                    required
+                  />
+                </div>
+
+                <div class="form-div-group">
+                  <label class="profile-form-label" for="city"> Zip </label>
+                  <input
+                    class="profile-form-input"
+                    type="email"
+                    name="email"
+                    id="city"
+                    required
+                  />
+                </div>
+
+                <div class="form-div-group">
+                  <input
+                    class="btn user-form-profile-submit"
+                    type="submit"
+                    value="Submit Form"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- :For Home Tasks -->
+          <div
+            data-text="two"
+            class="user-container user-container--home-tasks"
+          >
+            <div class="user-container-top">
+              <div class="date-time-container">
+                <span class="date"> 8 feb </span>
+
+                <span class="time"> 08:55 </span>
+              </div>
+
+              <p class="day">Wednesday</p>
+
+              <div class="user-search">
+                <form class="user-search-form" action="#">
+                  <button class="user-search-btn" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                  <input
+                    class="user-search-input"
+                    type="text"
+                    placeholder="Search"
+                    name="search"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <div class="user-container-bot user-container-bot--home-tasks">
+              <div class="home-tasks-contents-container">
+                <!-- ::Panel #1 -->
+                <div class="home-tasks-panel">
+                  <h3 class="heading-3">Mathematics: Variables</h3>
+
+                  <div class="home-task-time">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>due in 2 days</span>
+                  </div>
+
+                  <p class="para-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+
+                  <div class="home-task-progress">
+                    <p>95% completed</p>
+                    <div class="progress-shape--full">
+                      <div class="progress-shape--live"></div>
+                    </div>
+
+                    <button class="btn home-task-panel-btn">Completed</button>
+                  </div>
+                </div>
+
+                <!-- ::Panel #2 -->
+                <div class="home-tasks-panel">
+                  <h3 class="heading-3">Physics: Current Electricity</h3>
+
+                  <div class="home-task-time">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>due in 5 days</span>
+                  </div>
+
+                  <p class="para-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+
+                  <div class="home-task-progress">
+                    <p>60% completed</p>
+                    <div class="progress-shape--full">
+                      <div
+                        class="progress-shape--live progress-shape-live--card-2"
+                      ></div>
+                    </div>
+
+                    <button class="btn home-task-panel-btn">Completed</button>
+                  </div>
+                </div>
+
+                <!-- ::Panel #3 -->
+                <div class="home-tasks-panel">
+                  <h3 class="heading-3">History: USA Culture</h3>
+
+                  <div class="home-task-time">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>due in 4 days</span>
+                  </div>
+
+                  <p class="para-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+
+                  <div class="home-task-progress">
+                    <p>25% completed</p>
+                    <div class="progress-shape--full">
+                      <div
+                        class="progress-shape--live progress-shape-live--card-3"
+                      ></div>
+                    </div>
+
+                    <button class="btn home-task-panel-btn">Completed</button>
+                  </div>
+                </div>
+
+                <!-- ::Panel #4 -->
+                <div class="home-tasks-panel">
+                  <h3 class="heading-3">Networking: IPV6</h3>
+
+                  <div class="home-task-time">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>due in 1 days</span>
+                  </div>
+
+                  <p class="para-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+
+                  <div class="home-task-progress">
+                    <p>5% completed</p>
+                    <div class="progress-shape--full">
+                      <div
+                        class="progress-shape--live progress-shape-live--card-4"
+                      ></div>
+                    </div>
+
+                    <button class="btn home-task-panel-btn">Completed</button>
+                  </div>
+                </div>
+
+                <!-- ::Panel #5 -->
+                <div class="home-tasks-panel">
+                  <h3 class="heading-3">Programming: C++</h3>
+
+                  <div class="home-task-time">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>due in 2 days</span>
+                  </div>
+
+                  <p class="para-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+
+                  <div class="home-task-progress">
+                    <p>47% completed</p>
+                    <div class="progress-shape--full">
+                      <div
+                        class="progress-shape--live progress-shape-live--card-5"
+                      ></div>
+                    </div>
+
+                    <button class="btn home-task-panel-btn">Completed</button>
+                  </div>
+                </div>
+
+                <!-- ::Panel #6 -->
+                <div class="home-tasks-panel">
+                  <h3 class="heading-3">English: Simple Past</h3>
+
+                  <div class="home-task-time">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>due in 6 days</span>
+                  </div>
+
+                  <p class="para-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+
+                  <div class="home-task-progress">
+                    <p>12% completed</p>
+                    <div class="progress-shape--full">
+                      <div
+                        class="progress-shape--live progress-shape-live--card-6"
+                      ></div>
+                    </div>
+
+                    <button class="btn home-task-panel-btn">Completed</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- :For Schedule -->
+          <div
+            data-text="three"
+            class="user-container user-container--schedule"
+          >
+            <div class="user-container-top">
+              <div class="date-time-container">
+                <span class="date"> 8 feb </span>
+
+                <span class="time"> 08:55 </span>
+              </div>
+
+              <p class="day">Wednesday</p>
+
+              <div class="user-search">
+                <form class="user-search-form" action="#">
+                  <button class="user-search-btn" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                  <input
+                    class="user-search-input"
+                    type="text"
+                    placeholder="Search"
+                    name="search"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <div class="user-container-bot user-container-bot--schedule">
+              <!-- Schedule #1 -->
+              <div class="schedule-class-container schedule--1">
+                <div class="schedule-class-time">
+                  <span class="schedule-time schedule-time--big">9:00</span>
+                  <span class="schedule-time schedule-time--end">10:30</span>
+                </div>
+
+                <div class="schedule-class-material">
+                  <div class="schedule-material-img-container">
+                    <div class="schedule-img-container">
+                      <img
+                        src="/images/user-profile-picture.png"
+                        alt="instructor image"
+                        class="schedule-img"
+                      />
+                    </div>
+
+                    <div class="schedule-instructor-name">
+                      <span> Mr.Huthaifa</span>
+                    </div>
+                  </div>
+
+                  <div class="schedule-material-bio">
+                    <span class="schedule-material-name"> Mathematics </span>
+
+                    <span class="schedule-lecture-bio">
+                      Multiplying 3-digits by 2-digits numbers.
+                    </span>
+                  </div>
+
+                  <div class="schedule-material-time">
+                    <div class="schedule-classroom-img-container">
+                      <img
+                        src="/images/classroom.jpg"
+                        alt="classroom image"
+                        class="schedule-classroom-img"
+                      />
+
+                      <p>
+                        <i class="fa-solid fa-clock icon-lecture"></i>
+
+                        <span>5 min to start</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Schedule #2 -->
+              <div class="schedule-class-container schedule--2">
+                <div class="schedule-class-time">
+                  <span class="schedule-time schedule-time--big">11:00</span>
+                  <span class="schedule-time schedule-time--end">12:00</span>
+                </div>
+
+                <div class="schedule-class-material schedule-class-material--2">
+                  <div class="schedule-material-img-container">
+                    <div class="schedule-img-container">
+                      <img
+                        src="/images/user-pic-2.png"
+                        alt="instructor image"
+                        class="schedule-img"
+                      />
+                    </div>
+
+                    <div class="schedule-instructor-name">
+                      <span> Mr.John Doe</span>
+                    </div>
+                  </div>
+
+                  <div class="schedule-material-bio">
+                    <span class="schedule-material-name"> History </span>
+
+                    <span class="schedule-lecture-bio">
+                      History of Moroco.
+                    </span>
+                  </div>
+
+                  <div class="schedule-material-time">
+                    <div class="schedule-classroom-img-container">
+                      <img
+                        src="/images/classroom.jpg"
+                        alt="classroom image"
+                        class="schedule-classroom-img"
+                      />
+
+                      <p>
+                        <i class="fa-solid fa-clock icon-lecture"></i>
+
+                        <span>70 min to start</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Schedule #3 -->
+              <div class="schedule-class-container schedule--3">
+                <div class="schedule-class-time">
+                  <span class="schedule-time schedule-time--big">12:05</span>
+                  <span class="schedule-time schedule-time--end">13:30</span>
+                </div>
+
+                <div class="schedule-class-material schedule-class-material--3">
+                  <div class="schedule-material-img-container">
+                    <div class="schedule-img-container">
+                      <img
+                        src="/images/user-pic-3.png"
+                        alt="instructor image"
+                        class="schedule-img"
+                      />
+                    </div>
+
+                    <div class="schedule-instructor-name">
+                      <span> Ms.Maria Jones</span>
+                    </div>
+                  </div>
+
+                  <div class="schedule-material-bio">
+                    <span class="schedule-material-name"> Physics </span>
+
+                    <span class="schedule-lecture-bio">
+                      Electrostatic potential and capacitance.
+                    </span>
+                  </div>
+
+                  <div class="schedule-material-time">
+                    <div class="schedule-classroom-img-container">
+                      <img
+                        src="/images/classroom.jpg"
+                        alt="classroom image"
+                        class="schedule-classroom-img"
+                      />
+
+                      <p>
+                        <i class="fa-solid fa-clock icon-lecture"></i>
+
+                        <span>2 hours to start</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Schedule #4 -->
+              <div class="schedule-class-container schedule--3">
+                <div class="schedule-class-time">
+                  <!-- <span class="schedule-time schedule-time--big">12:05</span>
+                    <span class="schedule-time schedule-time--end">13:30</span> -->
+                </div>
+
+                <div class="schedule-class-material schedule-class-material--4">
+                  <div class="schedule-activity-img-container">
+                    <img
+                      src="/images/lunch-sticker.png"
+                      alt="lunch sticker"
+                      class="schedule-activity-img"
+                    />
+                  </div>
+
+                  <p class="schedule-text">
+                    <span class="schedule-text-span--1">Lunch Break</span>
+
+                    <span class="schedule-text-span--2">
+                      11:50 <span>--</span> 12:50
+                    </span>
+                  </p>
+
+                  <div
+                    class="schedule-activity-img-container schedule-activity-img--2"
+                  >
+                    <img
+                      src="/images/lunch-sticker.png"
+                      alt="lunch sticker"
+                      class="schedule-activity-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- <p class="schedule-para-text">Next activity is:</p> -->
+            </div>
+          </div>
+
+          <!-- :For Chat -->
+          <div data-text="four" class="user-container user-container--chat">
+            <div class="user-container-top">
+              <div class="date-time-container">
+                <span class="date"> 8 feb </span>
+
+                <span class="time"> 08:55 </span>
+              </div>
+
+              <p class="day">Wednesday</p>
+
+              <div class="user-search">
+                <form class="user-search-form" action="#">
+                  <button class="user-search-btn" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                  <input
+                    class="user-search-input"
+                    type="text"
+                    placeholder="Search"
+                    name="search"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <div class="user-container-bot user-container-bot--chat">
+              <div class="user-chat-container">
+                <div class="user-chat-container--left">
+                  <form
+                    class="user-search-form user-search-form--chat"
+                    action="#"
+                  >
+                    <input
+                      class="user-search-input user-search-input--chat"
+                      type="text"
+                      placeholder="Search Friend.."
+                      name="search"
+                    />
+
+                    <button
+                      class="user-search-btn user-search-btn--chat"
+                      type="submit"
+                    >
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </form>
+
+                  <ul class="chat-left-list">
+                    <li class="chat-left-item">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-message-container">
+                        <span class="chat-user-name">Mr.Jack</span>
+                        <p class="chat-user-message">
+                          Hello, can I send you ...
+                        </p>
+                      </div>
+
+                      <span class="chat-unread-messages">3</span>
+                    </li>
+
+                    <li class="chat-left-item">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/chat--1.png"
+                          alt="user"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-message-container">
+                        <span class="chat-user-name">Elina Doe</span>
+                        <p class="chat-user-message typing-message">
+                          typing...
+                        </p>
+                      </div>
+
+                      <span class="chat-unread-messages">6</span>
+                    </li>
+
+                    <li class="chat-left-item">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-message-container">
+                        <span class="chat-user-name">John Tommy</span>
+                        <p class="chat-user-message">Hi</p>
+                      </div>
+
+                      <span class="chat-unread-messages">1</span>
+                    </li>
+
+                    <li class="chat-left-item">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-3.png"
+                          alt="user"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-message-container">
+                        <span class="chat-user-name">Marline</span>
+                        <p class="chat-user-message">ok, see u later</p>
+                      </div>
+
+                      <!-- <span class="chat-unread-messages">1</span> -->
+                    </li>
+
+                    <li class="chat-left-item">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-4.jpg"
+                          alt="user"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-message-container">
+                        <span class="chat-user-name">Yandi</span>
+                        <p class="chat-user-message">no i saw her last day</p>
+                      </div>
+
+                      <span class="chat-unread-messages">1</span>
+                    </li>
+
+                    <li class="chat-left-item">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-5.jpg"
+                          alt="user"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-message-container">
+                        <span class="chat-user-name">Restove</span>
+                        <p class="chat-user-message">Ok, meet me</p>
+                      </div>
+
+                      <span class="chat-unread-messages">5</span>
+                    </li>
+
+                    <li class="chat-left-item">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-6.png"
+                          alt="user"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-message-container">
+                        <span class="chat-user-name">Rayan</span>
+                        <p class="chat-user-message online-user">Online</p>
+                      </div>
+
+                      <!-- <span class="chat-unread-messages">3</span> -->
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="user-chat-container--right">
+                  <div class="chat-filed">
+                    <!-- Receiver -->
+                    <div class="chat-message-container--receiver">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user img"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-content">
+                        <p class="chat-message--receiver">
+                          Hi, hope you are fine
+                        </p>
+                        <span class="message-time">8:00 am</span>
+                      </div>
+                    </div>
+
+                    <!-- Sender -->
+                    <div class="chat-message-container--sender">
+                      <div class="chat-content">
+                        <p class="chat-message--sender">
+                          Hi, hope you are fine
+                        </p>
+                        <span class="message-time">8:00 am</span>
+                      </div>
+
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user img"
+                          class="chat-user-img"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Receiver -->
+                    <div class="chat-message-container--receiver">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user img"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-content">
+                        <p class="chat-message--receiver">
+                          Hi, hope you are fine
+                        </p>
+                        <span class="message-time">8:00 am</span>
+                      </div>
+                    </div>
+
+                    <!-- Sender -->
+                    <div class="chat-message-container--sender">
+                      <div class="chat-content">
+                        <p class="chat-message--sender">
+                          Hi, hope you are fine
+                        </p>
+                        <span class="message-time">8:00 am</span>
+                      </div>
+
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user img"
+                          class="chat-user-img"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Receiver -->
+                    <div class="chat-message-container--receiver">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user img"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-content">
+                        <p class="chat-message--receiver">
+                          Hi, hope you are fine
+                        </p>
+                        <span class="message-time">8:00 am</span>
+                      </div>
+                    </div>
+
+                    <!-- Sender -->
+                    <div class="chat-message-container--sender">
+                      <div class="chat-content">
+                        <p class="chat-message--sender">
+                          Hi, hope you are fine
+                        </p>
+                        <span class="message-time">8:00 am</span>
+                      </div>
+
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user img"
+                          class="chat-user-img"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Receiver -->
+                    <div class="chat-message-container--receiver">
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user img"
+                          class="chat-user-img"
+                        />
+                      </div>
+
+                      <div class="chat-content">
+                        <p class="chat-message--receiver">
+                          Hi, hope you are fine
+                        </p>
+                        <span class="message-time">8:00 am</span>
+                      </div>
+                    </div>
+
+                    <!-- Sender -->
+                    <div class="chat-message-container--sender">
+                      <div class="chat-content">
+                        <p class="chat-message--sender">
+                          Hi, hope you are fine
+                        </p>
+                        <span class="message-time">8:00 am</span>
+                      </div>
+
+                      <div class="chat-img-container">
+                        <img
+                          src="/images/user-pic-2.png"
+                          alt="user img"
+                          class="chat-user-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <form
+                    class="user-search-form user-form--chat-field"
+                    action="#"
+                  >
+                    <input
+                      class="user-search-input user-search-input--chat"
+                      type="text"
+                      placeholder="Start message.."
+                      name="search"
+                    />
+
+                    <button class="user-search-btn btn--chat" type="submit">
+                      <i class="fa-solid fa-link icon-user-chat"></i>
+                    </button>
+
+                    <button class="user-search-btn btn--chat" type="submit">
+                      <i class="fa-solid fa-paper-plane icon-user-chat"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>
